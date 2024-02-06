@@ -1,0 +1,17 @@
+sudo amazon-linux-extras list | grep nginx
+
+sudo amazon-linux-extras enable nginx1
+
+sudo yum clean metadata
+
+sudo yum -y install nginx
+
+service nginx startll
+systemctl start nginx.service
+
+echo "<h1>WEB SERVER-1</h1" > /usr/share/nginx/html/index.html
+
+  <h1>www.mybank.com</h1>
+chkconfig nginx on
+
+yum install stress
